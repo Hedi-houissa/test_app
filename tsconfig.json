@@ -1,7 +1,28 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@authentification/*": ["authentification/*"],
+      "@middleware/*": ["middleware/*"],
+      "@utils/*": ["utils/*"],
+      "@styles/*": ["styles/*"],
+      "@hooks/*": ["hooks/*"],
+      "@pages/*": ["pages/*"],
+      "@lib/*": ["lib/*"],
+      "@data/*": ["data/*"],
+      "@context/*": ["context/*"],
+      "@icons/*": ["components/icons/*"],
+      "@svg/*": ["assets/svg/*"],
+      "@validation/*": ["validation/*"],
+      "@assets/*": ["assets/*"],
+      "@services/*": ["services/*"],
+      "@public/*": ["public/*"],
+      "@root/*": ["./*"]
+    },
+ 
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,6 +36,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Drawer/index.style.tsx"],
   "exclude": ["node_modules"]
 }

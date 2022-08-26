@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
+const withImages = require('next-images')
 
-module.exports = {
+module.exports = withImages(),{
+  
   reactStrictMode: true,
   fileExtensions: ["jpg", "jpeg", "png", "gif", "pdf", "svg"],
   experimental: {
