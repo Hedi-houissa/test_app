@@ -13,7 +13,15 @@ const Drawer: NextPage<{ sideBar: drawer[] }> = ({ sideBar }) => {
   return (
     <>
       {sideBar.map((drawer, i) => {
-        return <p onClick={() => router.push(drawer.page)}>{drawer.title}</p>;
+        return (
+          <div
+            onClick={() => router.push(drawer.page)}
+            className="hover:opacity-75 cursor-pointer border-solid border-2 border-[#F4F7FA] rounded-[16px] px-[20px] pt-[2px] pb-[4px] flex gap-2 w-fit"
+          >
+            <p className="text-[16px] text-[#515154] font-[700] w-[150px]">{drawer.title}</p>
+            <img src="/assets/drawer/row_rigth.svg" alt="row"/>
+          </div>
+        );
       })}
     </>
   );

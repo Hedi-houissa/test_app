@@ -16,17 +16,27 @@ const SideBar: NextPage = () => {
     {
       id: 2,
       icon: "",
-      title: "Attribuer une tâche",
+      title: "Attrifdghdfghd gh buer une tâche",
       page: "attribuer-une-tache",
       subNav: null,
     },
   ];
  
 
-  return (
-    <Content backgroundColor="blue" margin="0" height="100vh" width="20%">
+  return (<div className="flex flex-row w-full	" >
+  
+    <div className=" w-[10%] h-screen border-r-2  border-indigo-500 flex flex-col	gap-2 items-center pt-2">
+    <Drawer sideBar={Menus} />
+
+    </div>
+    <div className=" w-w-[10%] h-screen border-r-2  border-indigo-500 flex flex-col	gap-2 items-center pt-2">
       <Drawer sideBar={Menus} />
-    </Content>
+      <Drawer sideBar={Menus} />
+    </div>
+    <div>
+      fghndgfhdfg
+    </div>
+  </div>
   );
 };
 
